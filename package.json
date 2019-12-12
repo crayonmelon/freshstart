@@ -1,0 +1,24 @@
+{
+  "name": "freshstart",
+  "version": "1.0.0",
+  "description": "React and express app ",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix reactstuff",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Ciarán Malone",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.0.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
